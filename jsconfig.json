@@ -1,0 +1,12 @@
+{
+  "include": ["src/**/*"],
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"]
+    }
+  }
+}
