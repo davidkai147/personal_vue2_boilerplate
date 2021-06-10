@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
   extends: ['plugin:vue/essential', 'prettier'],
   rules: {
@@ -13,7 +13,7 @@ module.exports = {
     'linebreak-style': 0,
     'no-bitwise': 0,
     indent: ['error', 2],
-    // 'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
     'arrow-parens': ['error', 'as-needed'],
     'max-len': 'off',
     'no-plusplus': 'off',
@@ -24,8 +24,8 @@ module.exports = {
     //   'never',
     //   {
     //     packages: 'never',
-    //     json: 'always',
-    //   },
+    //     json: 'always'
+    //   }
     // ],
     'no-floating-decimal': 'off',
     'no-underscore-dangle': 'off',
@@ -40,22 +40,19 @@ module.exports = {
       'error',
       {
         newIsCap: false,
-        properties: false,
-      },
-    ],
+        properties: false
+      }
+    ]
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: 'babel-eslint'
   },
   overrides: [
     {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
+      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
       env: {
-        jest: true,
-      },
-    },
-  ],
+        jest: true
+      }
+    }
+  ]
 };
